@@ -28,7 +28,7 @@
  
         <!-- Annotated entity classes -->
         <mapping class="com.cerezoambulante.mx.entity.Cliente"/>
-        
+        <mapping class="com.cerezoambulante.mx.entity.Usuario"/>
     </session-factory>
 </hibernate-configuration>
 

@@ -78,6 +78,7 @@ public class IUsuarioImpl implements UsuarioModel {
             s.getTransaction().commit();
             s.close();
             sf.close();
+            System.out.println("Ingresado correctamente");
         } catch (HibernateException e) {
             System.out.println("Error al crear el registro:" + e.getMessage());
         }
