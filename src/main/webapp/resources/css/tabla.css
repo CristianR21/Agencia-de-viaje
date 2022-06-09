@@ -1,0 +1,95 @@
+
+/* 
+ Autor: Cristian Adair Ramirez R
+    Fecha de creación: 19 de abril de 2022
+    Fecha de modificación: 10 de mayo de 2022
+*/
+/*Variables*/
+
+                                                                                                                                                                                                                                                                                            body {
+    background:   rgba(0, 0, 0, 0.7) url("https://img.freepik.com/vector-gratis/playa-mar-palmeras-hojas-fondo-verano_33099-1767.jpg?w=1380&t=st=1654728081~exp=1654728681~hmac=fba0b75bf47847e3454310a01744294b2770d5cfc15a575df7ceca9d9601c066");
+   height: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+footer {
+  
+background: #fff url("https://album.es/fotos/uploads/imagenes/thumbs/fondo-para-albumes-de-viaje-formato-classic-maletas-y-avion_viajes-35-classic_1200px.jpg");
+color: #fff;
+}
+p.geor {
+    
+    font-family: georgia;}
+
+
+.table{
+    width: 100%;
+    background: #ff9999;
+    line-height: 1.3em;
+    display: table;
+    tr:nth-of-type(odd) {
+        background:#cccccc;
+    }
+    td, th {
+        padding: 6px;
+        border: 1px solid;
+        text-align: left;
+    }
+    th {
+        background:#cccccc;
+        color:#ff6666;
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .table.table {
+        margin-bottom: 0;
+        td, th {
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            &:first-child, {
+                display: none;
+            }
+        }
+        .pinned td{
+            display: none;
+        }
+    }
+    .pinned {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background:#ffff99;
+        width: 35%;
+        overflow: hidden;
+        overflow-x: scroll;
+        border-right: 1px solid ;
+        border-left: 1px solid ;
+        table {
+            border-right: none;
+            border-left: none;
+            width: 100%;
+            th, td {
+                white-space: nowrap;
+            }
+            td:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    div.table-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-right: 1px solid;
+        div.scrollable {
+            overflow: scroll;
+            overflow-y: hidden;
+            table {
+                margin-left: 35%;
+            }
+        }
+    }
