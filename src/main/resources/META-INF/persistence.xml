@@ -4,6 +4,7 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>com.cerezoambulante.mx.entity.Cliente</class>
     <class>com.cerezoambulante.mx.entity.Usuario</class>
+    <class>com.cerezoambulante.mx.entity.Viajes</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/cereza"/>
