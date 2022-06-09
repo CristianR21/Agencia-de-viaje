@@ -82,7 +82,7 @@ public class UsuarioServletController  extends HttpServlet{
     private void Listar(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("Pages/list.jsp");
+                = request.getRequestDispatcher("pages/list.jsp");
         this.service = new UsuarioServiceImpl();
         List<Usuario> ListaUsuario = this.service.obtenerRegistros();
         request.setAttribute("ListaUsuario", ListaUsuario);
@@ -92,7 +92,7 @@ public class UsuarioServletController  extends HttpServlet{
     private void crearFormulario(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("Pages/createForm.jsp");
+                = request.getRequestDispatcher("pages/createForm.jsp");
         dispatcher.forward(request, response);
 
     }
@@ -102,7 +102,7 @@ public class UsuarioServletController  extends HttpServlet{
 
         Usuario usuario = this.service.obtenerRegistro(Integer.parseInt(request.getParameter("id")));
         request.setAttribute("usuario", usuario);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("Pages/actualizarForm.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/actualizarForm.jsp");
         dispatcher.forward(request, response);
 
     }
@@ -120,7 +120,7 @@ public class UsuarioServletController  extends HttpServlet{
         System.out.println("INGRESADO: " + usuario.getNombre());
 
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("Pages/createForm.jsp");
+                = request.getRequestDispatcher("pages/createForm.jsp");
         dispatcher.forward(request, response);
         this.service = new UsuarioServiceImpl();
         List<Usuario> ListaUsuario = this.service.obtenerRegistros();
@@ -153,7 +153,7 @@ public class UsuarioServletController  extends HttpServlet{
     private void Eliminar(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("Pages/list.jsp");
+                = request.getRequestDispatcher("pages/list.jsp");
         this.service = new UsuarioServiceImpl();
         Usuario usuario = new Usuario();
         usuario = this.service.obtenerRegistro(Integer.parseInt(request.getParameter("id")));
