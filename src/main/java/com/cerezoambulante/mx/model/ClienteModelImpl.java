@@ -12,7 +12,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-
+        
 public class ClienteModelImpl implements IClientemodel {
 
     private SessionFactory sf;

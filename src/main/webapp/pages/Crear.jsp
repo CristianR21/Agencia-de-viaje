@@ -49,7 +49,7 @@
                     <input type="text" name="correo" placeholder="correo">
                 </label>
                 <br>
-                <center> <button class="btn btnLogin1">Entrar</button></center>
+                <center> <button class="btn btnLogin1">Confirmar</button></center>
             </form>
 
         </div>
