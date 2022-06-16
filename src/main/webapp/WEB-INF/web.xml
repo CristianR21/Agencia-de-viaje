@@ -4,17 +4,25 @@
         <servlet-name>UsuarioServletController</servlet-name>
         <servlet-class>com.cerezoambulante.mx.controller.UsuarioServletController</servlet-class>
     </servlet>
-     <servlet>
+    <servlet>
         <servlet-name>ClienteServletController</servlet-name>
         <servlet-class>com.cerezoambulante.mx.controller.ClienteServletController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReservacionServletController</servlet-name>
+        <servlet-class>com.cerezoambulante.mx.controller.ReservacionServletController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UsuarioServletController</servlet-name>
         <url-pattern>/UsuarioServletController</url-pattern>
     </servlet-mapping>
-     <servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ClienteServletController</servlet-name>
         <url-pattern>/ClienteServletController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReservacionServletController</servlet-name>
+        <url-pattern>/ReservacionServletController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

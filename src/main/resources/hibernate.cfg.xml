@@ -29,6 +29,7 @@
         <!-- Annotated entity classes -->
         <mapping class="com.cerezoambulante.mx.entity.Cliente"/>
         <mapping class="com.cerezoambulante.mx.entity.Usuario"/>
+        <mapping class="com.cerezoambulante.mx.entity.Reservacion"/>
     </session-factory>
 </hibernate-configuration>
 

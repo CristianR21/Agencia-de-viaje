@@ -21,7 +21,8 @@ color: #fff;
 }
 p.geor {
     
-    font-family: georgia;}
+    font-family: georgia;
+}
 
 
 .table{
@@ -50,9 +51,7 @@ p.geor {
             position: relative;
             white-space: nowrap;
             overflow: hidden;
-            &:first-child, {
-                display: none;
-            }
+            
         }
         .pinned td{
             display: none;
@@ -93,3 +92,5 @@ p.geor {
             }
         }
     }
+}
+
