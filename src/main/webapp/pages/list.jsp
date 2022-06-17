@@ -1,17 +1,18 @@
-<%-- 
-    Document   : list
-    Created on : 9 jun 2022, 17:33:09
-    Author     : labso07
---%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+
 <html>
+    
     <head>
+        <style type="text/css">
+            <%@include file="../resources/css/tabla.css" %>
+        </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+ 
     </head>
     <body>
+
+
 <table class="highlight centered responsive-table">
             <thead>
                 <tr>
@@ -46,5 +47,9 @@
 
 
             </tbody>
-        </table><!-- FIN TABLE -->    </body>
+        </table><!-- FIN TABLE -->		
+    </div><!-- FIN DIV.Container -->
+</div><!-- FIN DIV COL S12 -->
+</div><!-- DIV Tables example -->
+</body>
 </html>

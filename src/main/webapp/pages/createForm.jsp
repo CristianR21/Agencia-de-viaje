@@ -9,7 +9,7 @@
 <html>
     <head>
          <style type="text/css">
-             <%@include file="../resources/css/RegistrarEditar.css" %>
+<%@include file="../resources/css/RegistrarEditar.css" %>
 
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -20,7 +20,7 @@
             <div class="row card hoverable">
                 <div class="card-content ">
                     <h4 class="center blue-text">Registrar usuario</h4>
-                    <form class="row s12" action="UsuarioServletController?action=crearBD" method="post">
+                    <form class="row s12" action="UsuarioServletController?action=listar" method="post">
                         <input type='hidden' name='idUsuario' ><br>  
                         <div class="col s12">
                             <div class="input-field">

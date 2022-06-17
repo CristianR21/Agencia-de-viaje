@@ -42,25 +42,7 @@ public class ReservacionServletController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String action = request.getParameter("action");
-        System.out.println("switch: " + action);
-        switch (action) {
-            case "crear":
-                crear(request, response);
-                break;
-            case "listar":
-                listar(request, response);
-                break;
-            case "eliminar":
-                eliminar(request, response);
-                break;
-            case "editar":
-                editar(request, response);
-                break;
-            case "guardar":
-                guardar(request, response);
-                break; 
-        }
+        doGet(request, response);
     }
 private void crear(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
