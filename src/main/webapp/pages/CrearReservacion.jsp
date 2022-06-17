@@ -10,21 +10,35 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+<style type="text/css">
+        <%@include file="../resources/css/crearreservacion.css" %>
+        </style>
     </head>
-    <body>
+    <body class="fondo">
+<div id="main">
+	<header>
+		<h1>Registro de Reservaciones</h1>
+	</header>	<!-- FIN cabecera -->
         <form action='../ReservacionServletController?action=crear' method='POST'>
                 <fieldset>
-                    <legend>Registro de Reservaciones</legend>
-                    
+	<div id="contenido">
                     <label>Nombre</label><br>
                         <input  name="Nombre" type="text"><br>
-                        
                         <label>Apellido</label><br>
+
                         <input  name="Apellido" type="text"><br>
-                        
-                        <label>Lugar</label><br>
-                        <input  name="Lugar" type="text"><br>
-                        
+                        <label>Lugares disponibles</label><br>
+
+                        <select name="Lugar"type="text"><br>
+                        <option value="Ventanilla"> Ventanilla</option>
+                        <option value="Mazunte"> Mazunte</option>
+                        <option value="Puerto Angel"> Puerto Angel</option>
+                        <option value="Playa la entrega"> Playa la entrega</option>
+                        <option value="Bahia Cacaluta"> Bahia Cacaluta</option>
+                        <option value="Playa Chahue"> Playa Chahue</option>
+                        </select>
+                        <br>
+
                         <label>Personas</label><br>
                         <input  name="Personas" type="number"><br>
                         
@@ -35,8 +49,7 @@
                         <input  name="FechaS" type="date"><br>
                         
                         <input type="submit" value="Reservar">
-                                
-                </fieldset>
-            </form>
+                        	</div> <!-- FIN contenido -->  
+                       </div> <!-- FIN main -->
     </body>
 </html>

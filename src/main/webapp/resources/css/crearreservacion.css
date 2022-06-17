@@ -1,0 +1,91 @@
+
+/* 
+ Autor: Cristian Adair Ramirez R
+    Fecha de creación: 19 de abril de 2022
+    Fecha de modificación: 10 de mayo de 2022
+*/
+/*reservacion*/
+ 
+body{
+    font: 0.85em Verdana, Arial;
+}
+
+/**** Contenedores ****/
+#main {
+    width: 640px;
+    margin: 25px auto;
+    background: #0066
+        FF;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+header {
+    height: 75px;
+    background: url(http://zttsoft.com/_codepen/web_con_img/img/cabecera.png);
+    color: #fff;
+    line-height: 55px; /* centra texto verticalmente */
+}
+footer {
+    text-align: right;
+    background: #B4963E;
+}
+#sub_cabecera, #sub_pie {
+    background: #EDCC6B;
+    text-align: center;
+}
+#contenido {
+    float: left;
+    width: 49.9%;
+    border-left: 1px dotted #7D620F;
+    border-right: 1px dashed #7D620F;
+}
+.lateral {
+    float: left;
+    width: 25%;
+}
+header, footer, #sub_cabecera, #sub_pie, #contenido, .lateral { padding: 10px;}
+
+/**** Enlaces ****/
+a         { text-decoration: none; font-size: 1.1em; }
+a:link    { color: #0066FF; }
+a:visited { color: #661166; }
+a:hover   { text-shadow: 1px 1px 1px #111; color: #FF3366; }
+a img     { border: none; }
+
+img { max-width: 100%; height: auto; }
+
+/**** Listas ****/
+ul, ol { font-size:0.9em;
+         color: #009900;
+         margin:2px 0 16px 35px;
+         list-style: none; }
+
+ol { list-style-type: lower-greek}
+ul { list-style-image: url("../img/check-a.png") }
+ul ul, ol ol { margin:4px 0 4px 35px; }
+ul li { font-size: 1.2em; }
+
+/**** Tipografía ****/
+h1,h1,h3,h4,h5,h6 { padding: 10px 0;}
+h3,h4{ color: #D8691A; }
+h5,h6{ color: #503E09; }
+hr   { border: 4px solid rgba(128,128,0,0.2); margin: 10px 0; }
+
+/**** Clases ****/
+.cierraBox  { clear: both; }
+
+.izq    { float: left; }
+.cen-t  { text-align: center; }
+.cen-i  { display: block; margin: 0 auto; }
+.som-i  { border: 2px solid #fff;
+          box-shadow: 0 0 6px 2px rgba(0,0,0,0.3); }
+
+.fondo {
+    background:  url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg); /* Para navegadores que no soportan gradiente */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);         /* Sintaxis estandar */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -o-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);      /* Opera (11.1 a 12.0) */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -ms-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);     /* IE 10 */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -moz-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);    /* Fx (3.6 a 15) */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -webkit-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200); /* Chrome y Safari */
+}
+/*###   FIN CSS   ###*/

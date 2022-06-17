@@ -1,0 +1,22 @@
+body {
+background:rgba(0, 0, 0, 0.7) url("https://img.freepik.com/vector-gratis/playa-mar-palmeras-hojas-fondo-verano_33099-1767.jpg?w=1380&t=st=1654728081~exp=1654728681~hmac=fba0b75bf47847e3454310a01744294b2770d5cfc15a575df7ceca9d9601c066");
+height: 100%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+footer {
+  
+background: #fff url("https://album.es/fotos/uploads/imagenes/thumbs/fondo-para-albumes-de-viaje-formato-classic-maletas-y-avion_viajes-35-classic_1200px.jpg");
+color: #fff;
+}
+
+.fondo {
+    background:  url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg); /* Para navegadores que no soportan gradiente */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);         /* Sintaxis estandar */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -o-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);      /* Opera (11.1 a 12.0) */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -ms-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);     /* IE 10 */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -moz-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200);    /* Fx (3.6 a 15) */
+    background: url(https://www.ceupe.com/images/easyblog_articles/2030/hotel-man-person-2017802.jpg), -webkit-radial-gradient(50% 50%, circle cover, #FFE8A7, #6F5200); /* Chrome y Safari */
+}

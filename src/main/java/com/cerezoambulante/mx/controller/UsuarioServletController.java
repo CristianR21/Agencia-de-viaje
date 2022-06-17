@@ -76,7 +76,7 @@ public class UsuarioServletController extends HttpServlet {
  private void Listar(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("pages/list.jsp");
+                = request.getRequestDispatcher("/pages/list.jsp");
         this.service = new IUsuarioServiceImpl();
         List<Usuario> ListaUsuario = this.service.obtenerRegistros();
         request.setAttribute("ListaUsuario", ListaUsuario);
@@ -86,7 +86,7 @@ public class UsuarioServletController extends HttpServlet {
     private void crearFormulario(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("pages/createForm.jsp");
+                = request.getRequestDispatcher("/pages/createForm.jsp");
         dispatcher.forward(request, response);
 
     }
@@ -96,7 +96,7 @@ public class UsuarioServletController extends HttpServlet {
 
         Usuario usuario = this.service.obtenerRegistro(Integer.parseInt(request.getParameter("id")));
         request.setAttribute("usuario", usuario);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/actualizarForm.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/pages/actualizarForm.jsp");
         dispatcher.forward(request, response);
 
     }

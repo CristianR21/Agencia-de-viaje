@@ -6,6 +6,7 @@
     <head>
         <style type="text/css">
             <%@include file="../resources/css/tabla.css" %>
+
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  

@@ -6,9 +6,10 @@
 */
 /*Variables*/
 
-                                                                                                                                                                                                                                                                                            body {
-    background:   rgba(0, 0, 0, 0.7) url("https://img.freepik.com/vector-gratis/playa-mar-palmeras-hojas-fondo-verano_33099-1767.jpg?w=1380&t=st=1654728081~exp=1654728681~hmac=fba0b75bf47847e3454310a01744294b2770d5cfc15a575df7ceca9d9601c066");
-   height: 100%;
+                                                                                                                                                                                                                                                                                           
+body {
+background:rgba(0, 0, 0, 0.7) url("https://img.freepik.com/vector-gratis/playa-mar-palmeras-hojas-fondo-verano_33099-1767.jpg?w=1380&t=st=1654728081~exp=1654728681~hmac=fba0b75bf47847e3454310a01744294b2770d5cfc15a575df7ceca9d9601c066");
+height: 100%;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;

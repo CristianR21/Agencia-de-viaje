@@ -4,13 +4,12 @@
     Fecha de modificación: 10 de mayo de 2022
     Descripción: Creacion de nuevo cliente
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <style type="text/css">
-            <%@include file="../resources/css/Crear.css" %>
+<%@include file="../resources/css/Crear.css" %>
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
